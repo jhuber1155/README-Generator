@@ -41,10 +41,30 @@ inquirer
         name: 'usage',
         },
         {
-        type: 'checkbox',
+        type: 'input',
+        message: 'Who would you like to thank for their help with the project or who needs due credit in helping you create this project?',
+        name: 'credit',
+        },
+        {
+        type: 'list',
         message: 'What License did you use?',
         choices: ['Apache License 2.0', 'MIT License', 'BSD 2-Clause "Simplified"', 'Boost Software License 1.0', 'GNU General Public License v2.0', 'Mozilla Public License 2.0'],
         name: 'license',
+        },
+        {
+        type: 'input',
+        message: 'Are there any extra features you would like to highlight with this project?',
+        name: 'features',
+        },
+        {
+        type: 'input',
+        message: 'How can others who view this contribute to this project?',
+        name: 'contribution',
+        },
+        {
+        type: 'input',
+        message: 'How can people test this project?',
+        name: 'projectTesting',
         },
     ])
     .then((data) =>{
