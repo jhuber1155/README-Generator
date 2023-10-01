@@ -43,7 +43,7 @@ inquirer
         {
         type: 'input',
         message: 'Who would you like to thank for their help with the project or who needs due credit in helping you create this project?',
-        name: 'credit',
+        name: 'credits',
         },
         {
         type: 'list',
@@ -67,15 +67,18 @@ inquirer
         name: 'projectTesting',
         },
     ])
+]
     .then((data) =>{
         const readMeAnswers = generateMarkdown(data)
-            fs.writeFile("README.md", readMeAnswers, (err) => err ? console.err(err) : console.log('README successfully written!'))
-             
-        })
-];
-console.log(questions)
+
+        const fileName = `${data.title.toLowerCase().split(' ').join(' ')}.md`;
+
+        function writeToFile(fileName, readMeAnswers){
+            fs.writeFile(fileName, readMeAnswers, (err) => err ? console.err(err) : console.log('README successfully written!'))
+        }
+    });
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+
 
 // TODO: Create a function to initialize app
 function init() {}
