@@ -70,14 +70,15 @@ inquirer
     ])
     .then((data) =>{
         const readMeAnswers = generateMarkdown(data)
-            fs.writeFile("README.md", readMeAnswers, (err) => err ? console.err(err) : console.log('README successfully written!'))
-             
+        const fileName = `${data.title.toLowerCase().split(' ').join('')}.md`;
+            fs.writeFile(fileName, readMeAnswers, (err) => err ? console.err(err) : console.log('README successfully written!'))
         })
 ];
 console.log(questions)
 // TODO: Create a function to write README file
+
 function writeToFile(fileName, data) {
-    fileName = `${data.title.toLowerCase().split(' ').join(' ').md}`;
+    
 }
 
 // TODO: Create a function to initialize app
