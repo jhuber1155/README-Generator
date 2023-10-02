@@ -47,12 +47,6 @@ inquirer
         name: 'credits',
         },
         {
-        type: 'list',
-        message: 'What License did you use?',
-        choices: ['Apache License 2.0', 'MIT License', 'BSD 2-Clause "Simplified"', 'Boost Software License 1.0', 'GNU General Public License v2.0', 'Mozilla Public License 2.0'],
-        name: 'license',
-        },
-        {
         type: 'input',
         message: 'Are there any extra features you would like to highlight with this project?',
         name: 'features',
@@ -67,6 +61,22 @@ inquirer
         message: 'How can people test this project?',
         name: 'projectTesting',
         },
+        {
+        type: 'list',
+        message: 'What License did you use?',
+        choices: ['Apache License 2.0', 'MIT License', 'BSD 2-Clause "Simplified"', 'Boost Software License 1.0', 'GNU General Public License v2.0', 'Mozilla Public License 2.0'],
+        name: 'license',
+        },
+        {
+        type: 'input',
+        message: 'What is your GitHub Profile for future questions?',
+        name: 'github',
+        },
+        {
+        type: 'input',
+        message: 'What is your email for future questions?',
+        name: 'emailName',
+        },
     ])
     .then((data) =>{
         const readMeAnswers = generateMarkdown(data)
@@ -74,12 +84,10 @@ inquirer
             fs.writeFile(fileName, readMeAnswers, (err) => err ? console.err(err) : console.log('README successfully written!'))
         })
 ];
-console.log(questions)
+// console.log(questions)
 // TODO: Create a function to write README file
 
-function writeToFile(fileName, data) {
-    
-}
+function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {}
