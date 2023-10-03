@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./generateMarkdown');
-// TODO: Create an array of questions for user input
+
 const questions = [
 inquirer
     .prompt([
@@ -54,12 +54,12 @@ inquirer
         {
         type: 'input',
         message: 'How can others who view this contribute to this project?',
-        name: 'contribution',
+        name: 'contributions',
         },
         {
         type: 'input',
         message: 'How can people test this project?',
-        name: 'projectTesting',
+        name: 'testing',
         },
         {
         type: 'list',

@@ -3,17 +3,25 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Badges
-  [![License](https://img.shields.io/badge/${data.license}-blue.svg)]
+  [![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
+  ![Static Badge](https://img.shields.io/badge/${data.license}-blue)
+
 
   ## Description 
   ${data.description}
 
   ## Table of Contents
+
   [Installation](#installation)
+
   [Usage](#usage)
+
   [License](#license)
-  [Contributions](#contribution)
-  [Testing](#projectTesting)
+
+  [Contributions](#contributions)
+
+  [Testing](#testing)
+
   [Questions](#questions)
 
   ## Installation 
@@ -27,16 +35,16 @@ function generateMarkdown(data) {
   ${data.credits}
 
   ## License
-  This repository is using: ${data.license}
+  This repository is using the following License: ${data.license}
   
   ## Features
   ${data.features}
 
-  ## How to Contribute
-  ${data.contribution}
+  ## Contributions
+  ${data.contributions}
 
   ## Tests
-  ${data.projectTesting}
+  ${data.testing}
 
   ## Questions
   My Github profile is: ${data.github}
