@@ -1,9 +1,10 @@
 
 function generateMarkdown(data) {
+  console.log(data)
   return `# ${data.title}
 
   ## Badges
-  [![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
+  ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
   ![Static Badge](https://img.shields.io/badge/${data.license}-blue)
 
 
@@ -47,7 +48,7 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Questions
-  My Github profile is: ${data.github}
+  My Github profile is: www.github.com/${data.github}
   I can be reached at: ${data.emailName} if you have any questions!
 
 `;

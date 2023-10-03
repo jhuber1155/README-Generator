@@ -64,7 +64,7 @@ inquirer
         {
         type: 'list',
         message: 'What License did you use?',
-        choices: ['Apache License 2.0', 'MIT License', 'BSD 2-Clause "Simplified"', 'Boost Software License 1.0', 'GNU General Public License v2.0', 'Mozilla Public License 2.0'],
+        choices: ['Apache', 'MIT', 'BSD-2-Clause', 'Boost', 'GNU', 'Mozilla'],
         name: 'license',
         },
         {
@@ -81,7 +81,7 @@ inquirer
     .then((data) =>{
         const readMeAnswers = generateMarkdown(data)
         const fileName = `${data.title.toLowerCase().split(' ').join('')}.md`;
-            fs.writeFile(fileName, readMeAnswers, (err) => err ? console.err(err) : console.log('README successfully written!'))
+            fs.writeFile(fileName, readMeAnswers, (err) => err ? console.error(err) : console.log('README successfully written!'))
         })
 ];
 
