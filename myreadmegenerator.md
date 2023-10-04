@@ -48,4 +48,4 @@
   My Github profile is: www.github.com/jhuber1155
   I can be reached at: john.huber@gmail.com if you have any questions!
 
-My video link can be found at:
+My video link can be found at: https://drive.google.com/file/d/1R56I9mUGrJ10Qs3wBzD3t2VaYKRsNXfn/view
