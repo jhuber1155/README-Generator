@@ -21,7 +21,7 @@ function generateMarkdown(data) {
 
   [Contributions](#contributions)
 
-  [Testing](#testing)
+  [Tests](#tests)
 
   [Questions](#questions)
 
@@ -45,7 +45,7 @@ function generateMarkdown(data) {
   ${data.contributions}
 
   ## Tests
-  ${data.testing}
+  ${data.tests}
 
   ## Questions
   My Github profile is: www.github.com/${data.github}

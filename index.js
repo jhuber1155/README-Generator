@@ -16,21 +16,21 @@ inquirer
         message: 'What is a description of your project?',
         name: 'description',    
         },
-        {
-        type: 'input',
-        message: 'What was your motivation for this particular project?',
-        name: 'motivation',
-        },
-        {
-        type: 'input',
-        message: 'Why did you decide to build this particular project? What problem will it solve?',
-        name: 'problemSolved',
-        },
-        {
-        type: 'input',
-        message: 'What did you learn as you built this project?',
-        name: 'lessonsLearned',
-        },
+        // {
+        // type: 'input',
+        // message: 'What was your motivation for this particular project?',
+        // name: 'motivation',
+        // },
+        // {
+        // type: 'input',
+        // message: 'Why did you decide to build this particular project? What problem will it solve?',
+        // name: 'problemSolved',
+        // },
+        // {
+        // type: 'input',
+        // message: 'What did you learn as you built this project?',
+        // name: 'lessonsLearned',
+        // },
         {
         type: 'input',
         message: 'How do you install this project for others to use it?',
@@ -41,16 +41,16 @@ inquirer
         message: 'How do you use this project? What downloads or modifications will the user need?',
         name: 'usage',
         },
-        {
-        type: 'input',
-        message: 'Who would you like to thank for their help with the project or who needs due credit in helping you create this project?',
-        name: 'credits',
-        },
-        {
-        type: 'input',
-        message: 'Are there any extra features you would like to highlight with this project?',
-        name: 'features',
-        },
+        // {
+        // type: 'input',
+        // message: 'Who would you like to thank for their help with the project or who needs due credit in helping you create this project?',
+        // name: 'credits',
+        // },
+        // {
+        // type: 'input',
+        // message: 'Are there any extra features you would like to highlight with this project?',
+        // name: 'features',
+        // },
         {
         type: 'input',
         message: 'How can others who view this contribute to this project?',
@@ -59,7 +59,7 @@ inquirer
         {
         type: 'input',
         message: 'How can people test this project?',
-        name: 'testing',
+        name: 'tests',
         },
         {
         type: 'list',
